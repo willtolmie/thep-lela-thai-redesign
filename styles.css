@@ -1,0 +1,195 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+}
+#logoBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+h1 {
+  margin: 0 0;
+  font-size: 2rem;
+  align-items: center;
+}
+.leftTitle {
+  padding-right: 60%;
+}
+h2 {
+  margin: 0 0;
+  font-size: 1.5rem;
+  align-items: center;
+}
+h4 {
+  padding-top: 5px;
+  margin-top: 0px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+}
+h3 {
+  background-color: lightblue;
+  height: 50px;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+.left {
+  display: flex;
+  text-align: left;
+  margin-left: 3.5%;
+}
+.right {
+  display: flex;
+  text-align: right;
+  margin-right: 3.5%;
+}
+.line {
+  flex-grow: 1;
+  height: 4px;
+  background-color: black;
+  display: inline-block;
+  align-self: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.lineRight {
+  flex-grow: 1;
+  height: 4px;
+  background-color: black;
+  display: inline-block;
+  margin-left: 10px;
+}
+.lineLeft {
+  flex-grow: 1;
+  height: 4px;
+  background-color: black;
+  display: inline-block;
+  margin-right: 10px;
+}
+.whiteContainer {
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.short {
+  height: 350px;
+  margin-bottom: 20px;
+}
+.medium {
+  height: 500px;
+  margin-bottom: 60px;
+}
+.tall {
+  height: 600px;
+}
+.blueContainer {
+  background-color: white;
+  align-items: center;
+  padding: 0 30%;
+  text-align: left;
+  margin-bottom: 60px;
+}
+br.wideBreak {
+  margin-bottom: 10px;
+}
+#staffGallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.top {
+  align-self: flex-start;
+}
+.bottom {
+  align-self: flex-end;
+}
+.subheader {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.galleryImage {
+  width: 20vw;
+  margin: 5px;
+}
+.overviewContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+.align-left {
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+.align-right {
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+.combinedHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.overviewImage {
+  width: 45%;
+}
+.stateImage {
+  width: 40vw;
+  margin: 5px;
+}
+.figmaImage {
+  width: 70vw;
+  margin: 5px;
+}
+.reflection {
+  margin-top: 10px;
+  padding-bottom: 5px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+}
+.imageBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+table {
+  margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid darkgray;
+  padding: 8px;
+  text-align: left;
+}
