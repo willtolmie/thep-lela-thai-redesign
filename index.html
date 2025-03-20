@@ -1,291 +1,57 @@
-<!-- TO RUN IN BROWSER:
-    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
-    2. Right click html file and either run in default browser or another browser
-  -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>an analysis of the accessibility of pop-up windows</title>
-    <!-- import CSS styles -->
+    <title>Thep Lela Thai</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <!-- page content goes into <body> -->
   <body>
-    <div id="logoBar">
-      <h1 class="left">STUDIO TOLMIE<span class="lineRight"></span></h1>
-      <h1 class="right">
-        <span class="lineLeft"></span>POP-UP WINDOW REDESIGN
-      </h1>
-    </div>
-    <div class="container">
-        <div class="whiteContainer tall">
-          <h1 class="leftTitle">
-            Rethinking how pop-up windows can maximize and balance
-            learnability, memorability, efficiency and accessibility
-          </h1>
-        </div>
-         <div class="combinedHeaderContainer">
-            <h1 class="align-left">BEFORE</h1>
-            <span class="line"></span>
-            <h1 class="align-right">AFTER</h1>
-          </div>
-        <div class="overviewContainer">
-          <div class="imageBox">
-            <div class="combinedHeaderContainer">
-              <img
-                class="overviewImage align-left"
-                src="./assets/original.jpg"
-              />
-              <img
-                class="overviewImage align-right"
-                src="./assets/revised.jpg"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="blueContainer">
-          <h2>
-            Kat Holmes defines mismatches as moments where human interactions
-            are hindered by an absence of appropriate design solutions.
-          </h2>
-          <br />
-          <h2>
-            This case study looks at three everyday instances of pop-up windows
-            with a design thinking approach, identifying and resolving potential
-            mismatches.
-        </div>
-        <div class="combinedHeaderContainer subheader">
-            <h1 class="align-left">1</h1>
-            <span class="line"></span>
-            <h1 class="align-right">TIKTOK SHOP</h1>
-          </div>
-          <div class="whiteContainer medium">
-            <div id="staffGallery" class="top">
-              <img class="galleryImage " src="./assets/tiktok shop 1.PNG" />
-            </div>
-            <div id="staffGallery" class="bottom">
-              <img class="galleryImage" src="./assets/tiktok shop 2.PNG" />
-            </div>
-            <div id="staffGallery" class="top"> 
-              <img class="galleryImage" src="./assets/tiktok shop 3.PNG" />
-            </div>
-          </div>
-        <div class="blueContainer">
-          <h2>
-            These screenshots demonstrate the varying states of a TikTok Shop pop-up when using an iPhone's native VoiceOver screen reader.
-          </h2>
-        </div>
-        <div class="combinedHeaderContainer subheader">
-            <h1 class="align-left">2</h1>
-            <span class="line"></span>
-            <h1 class="align-right">BROWN UNIVERSITY ADVISING SIDEKICK</h1>
-          </div>
-          <div class="whiteContainer medium">
-            <div id="staffGallery" class="top">
-              <img class="galleryImage " src="./assets/ask 1.png" />
-            </div>
-            <div id="staffGallery" class="bottom">
-              <img class="galleryImage" src="./assets/ask 2.png" />
-            </div>
-            <div id="staffGallery" class="top"> 
-              <img class="galleryImage" src="./assets/ask 3.png" />
-            </div>
-          </div>
-          <div class="blueContainer">
-          <h2>
-            These screenshots demonstrate the varying states of a Brown Advising Sidecick pop-up that occurs when the user has requested that a concentration declaration be deleted.
-          </h2>
-        </div>
-          <div class="combinedHeaderContainer subheader">
-            <h1 class="align-left">3</h1>
-            <span class="line"></span>
-            <h1 class="align-right">LULULEMON</h1>
-          </div>
-          <div class="whiteContainer short">
-            <div id="staffGallery" class="top">
-              <img class="galleryImage " src="./assets/lulu 1.png" />
-            </div>
-            <div id="staffGallery" class="bottom">
-              <img class="galleryImage" src="./assets/lulu 2.png" />
-            </div>
-            <div id="staffGallery" class="top"> 
-              <img class="galleryImage" src="./assets/lulu 3.png" />
-            </div>
-          </div>
-        <div class="blueContainer">
-          <h2>
-            These screenshots demonstrate the varying states of a lululemon pop-up that appears after a user has selected the 'Remove' button on an item in their cart. 
-          </h2>
-          <br />
-          <h2>
-            The first is the default state of the pop-up, the second occurs when a mouse hovers over the "YES, REMOVE THIS ITEM" button and the third occurs when the "YES, REMOVE THIS ITEM" button has been selected using the keyboard. 
-        </div>
-                to evaluate the learnability, memorability, efficiency and accessibility of these components, we must look at them in every possible direction. in the context of digital interfaces, this looks like analyzing the inputs users can effect and resulting outputs users can experience when interacting with these components.
-        <h3>part 1: input</h3>
-       
-        the functionality of each of these components differs based on (mode of)
-        input, <br />as shown in the following table
-        <table>
-          <tr>
-            <th></th>
-            <th>ASK</th>
-            <th>lululemon</th>
-            <th>TikTok Shop</th>
-          </tr>
-          <tr>
-            <td>mouse or touchpad</td>
-            <td>
-              • hovering over the ‘Cancel’ button makes the button turn gray<br />
-              • the ‘OK’ button does not change colors when the mouse hovers
-              over it
-            </td>
-            <td>
-              • hovering over the ‘Yes, remove this item’ button makes the
-              button turn into a darker red<br />• the line under ‘No, keep this
-              item’ turns red when the mouse hovers over it
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>keyboard</td>
-            <td>
-              • hitting the ‘Enter’ button activates the ‘OK’ button<br />•
-              hitting the ‘esc’ button activates the ‘Cancel’ button
-            </td>
-            <td>
-              • hitting the ‘Enter’ button activates the ‘Yes, remove this item’
-              button<br />• hitting the ‘esc’ button removes the window and
-              changes nothing
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>touch</td>
-            <td></td>
-            <td></td>
-            <td>
-              • the only tappable elements are the ‘Shop now,’ ‘Terms apply,’
-              and ‘x’ buttons<br />• the ‘Shop now’ and ‘x’ buttons do the same
-              thing
-            </td>
-          </tr>
-        </table>
-        <h3>part 2: output</h3>
-        while inputs change the internal state of a component, outputs are a
-        representation of these changes in state. <br />outputs help to reveal
-        the purpose of and current accessibility considerations for a component,
-        <br />as shown in the following table
-        <table>
-          <tr>
-            <th></th>
-            <th>ASK</th>
-            <th>lululemon</th>
-            <th>TikTok Shop</th>
-          </tr>
-          <tr>
-            <td>screen reader</td>
-            <td>
-              • the screen reader reads the text located above the buttons and
-              automatically selects the ‘OK’ button, reading the title of the
-              button and then ‘You are currently on a Button. to click this
-              button, press control-option-space.’ <br />• the user can use the
-              arrow keys to modify which button the screen reader reads,
-              pressing left to switch to the ‘Cancel’ button.
-            </td>
-            <td>
-              • the screen reader reads the text located above the buttons and
-              automatically selects the ‘Yes, remove this item’ button, reading
-              the title of the button and then ‘You are currently on a Button.
-              to click this button, press control-option-space.
-              <br />
-              • the user cannot use the arrow keys to switch which button the
-              screen reader reads.
-            </td>
-            <td>
-              • the screen reader reads the buttons and makes playful noises
-              when switching between buttons.
-            </td>
-          </tr>
-        </table>
-        <h3>part 3: state models</h3>
-        using these observations about potential interactions with and
-        accessibility considerations for the pop-up windows, <br />we can create
-        state models to visualize how a user may interact with the lululemon
-        pop-up window
-        <div>
-          <h4>
-            mouse & keyboard state models for the lululemon pop-up window as it
-            currently exists
-          </h4>
-          <img class="stateImage" src="./assets/State Models.jpg" />
-        </div>
-        we can make changes to these models to maximize the pop-up window's
-        learnability, memorability, efficiency and/or accessibility across
-        multiple forms of input
-        <div>
-          <h4>
-            revised mouse & keyboard state models for the lululemon pop-up
-            window
-          </h4>
-          <img class="stateImage" src="./assets/Revised State Models.jpg" />
-        </div>
-        using these revised state models, we can make improvements to the
-        lululemon pop-up window
-        <div>
-          <h4>revised lululemon pop-up window in the "default" state</h4>
-          <img class="figmaImage" src="./assets/normal.png" />
-        </div>
-        <div>
-          <h4>revised lululemon pop-up window in the "focused" state</h4>
-          <img class="figmaImage" src="./assets/focused.png" />
-        </div>
-        <h3>part 5: reflection</h3>
-        <div class="reflection">
-          • the components I observed were generally successful in
-          usability/accessibility because they had hover states for mouse users.
-          these color changes help users be aware of the location of their mouse
-          and therefore understand interactions. I kept these in my final design
-          because I want to maximize accessibility and usability for users.
-        </div>
-        <div class="reflection">
-          • the components I observed also had support for screen readers, which
-          read button labels and provided instructions for interaction for
-          accessibility. I wanted to maintain this accessibility in my final
-          design as well.
-        </div>
-        <div class="reflection">
-          • the original design of the lululemon pop-up lacked contextual
-          information. adding this information enhances users’ decision-making
-          ability and therefore solves the previous mismatch in design which may
-          have prompted users to make the wrong decision.
-        </div>
-        <div class="reflection">
-          • I also believe the unequal button spacing made navigation less
-          intuitive, so I changed them to occupy equal space and clearly appear
-          as interactive elements, improving learnability and efficiency.
-        </div>
-        <div class="reflection">
-          • my changes also strengthened accessibility for keyboard users,
-          ensuring that all users have an equitable experience.
-        </div>
-        <div class="reflection">
-          • the added item image and descriptive text provide more context,
-          reducing uncertainty for visually impaired users who may have not
-          known which item they chose to remove in the first place.
-        </div>
-        <div class="reflection">
-          • I think the consistent button sizes and placement improve usability
-          for users with cognitive impairments by reducing the cognitive load
-          required to make the keep/remove decision.
-        </div>
-        <div class="reflection">
-          • I think mouse and touch interactions are prioritized in UI design,
-          often at the expense of keyboard and screen reader users. I can work
-          towards a more inclusive and efficient user experience for all by
-          including keyboard users and screen reader interactions in my design.
-        </div>
+    <header>
+      <nav class="wide">
+        <a class="activePage">HOME</a>
+        <a>ABOUT US</a>
+        <a>REVIEWS</a>
+        <a>DIRECTIONS</a>
+      </nav>
+      <nav class="wide">
+        <a>OUR FOOD</a>
+        <a>OUR DRINKS</a>
+        <button class="orderButton">ORDER</button>
+      </nav>
+      <div class="hamburger">&#9776;</div>
+      <nav class="slim">
+        <button class="orderButton">ORDER</button>
+      </nav>
+    </header>
+    <div class="mainImageContainer">
+      <img src="./assets/dining 1.webp" alt="Dish" class="mainImage" />
+      <div class="contactBox">
+        <strong class="small">CALL US</strong><br />
+        <img src="./assets/phone.png" class="icon" /> (415) 383-3444<br />
+        <img src="./assets/phone.png" class="icon" /> (415) 383-3454<br />
+        <br />
+        <strong class="small">VISIT US</strong><br />
+        615 Strawberry Village<br />
+        Mill Valley, CA<br />
+        Every Day from 11:30 AM to 8:30 PM<br /><br />
       </div>
+      <div class="slideshowArrows">
+        <button class="arrow">&#8592;</button>
+        <button class="arrow">&#8594;</button>
+      </div>
+      <div class="menuItem">
+        <div class="extraSmall">SWEET, SOUR, SMOTHERED IN SAUCE</div>
+        <strong class="large">NEW </strong>
+        <strong class="large" style="color: #d08003">SPICY TILAPIA</strong>
+        <div><button class="menuItemButton">ORDER IT NOW</button></div>
+      </div>
+    </div>
+    <img src="./assets/dancer 1.png" class="dancer1" />
+    <img src="./assets/dancer 2.png" class="dancer2" />
+    <img
+      src="./assets/LOGO white lotus.png"
+      alt="Thep Lela Thai Logo"
+      class="logo"
+    />
   </body>
 </html>
