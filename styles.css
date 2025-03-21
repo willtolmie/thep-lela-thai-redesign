@@ -200,7 +200,7 @@ nav a:hover {
     height: 125px;
   }
   .contactBox {
-    font-size: x-large;
+    font-size: large;
     width: 450px;
   }
   .icon {
@@ -233,13 +233,13 @@ nav a:hover {
     font-size: large;
   }
   .large {
-    font-size: 40px;
+    font-size: 30px;
   }
   .menuItem {
     display: none;
   }
   .contactBox {
-    font-size: x-large;
+    font-size: large;
     width: 400px;
   }
   .dancer1 {
